@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 
 public class SeleniumCore {
 
-	WebDriver driver;
-	
 	public void Click(WebElement elementToClick)
 	{
 		elementToClick.click();
