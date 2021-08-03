@@ -7,14 +7,6 @@ public class SeleniumCore {
 
 	WebDriver driver;
 	
-	
-	public SeleniumCore(WebDriver _driver)
-	{
-		//Dependency Injection
-		driver = _driver;
-	}
-	
-	
 	public void Click(WebElement elementToClick)
 	{
 		elementToClick.click();
@@ -23,11 +15,6 @@ public class SeleniumCore {
 	public void SelectValue(WebElement value)
 	{
 		
-	}
-	
-	public void Navigate(String url)
-	{
-		driver.get(url);
 	}
 	
 	public void WaitForElementVisible()
