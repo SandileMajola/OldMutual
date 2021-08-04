@@ -2,6 +2,7 @@ package OldMutualAssessment.Selenium.Core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class SeleniumCore {
 
@@ -10,13 +11,9 @@ public class SeleniumCore {
 		elementToClick.click();
 	}
 	
-	public void SelectValue(WebElement value)
+	public void Hover(WebElement elementToHover, WebDriver driver)
 	{
-		
-	}
-	
-	public void WaitForElementVisible()
-	{
-
+		Actions action = new Actions(driver);
+		action.moveToElement(elementToHover).perform();
 	}
 }
